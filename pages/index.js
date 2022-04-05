@@ -18,10 +18,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Teste Google Auth com o Next.js</h1>
-
       {!session && (
         <>
+          <h1>Teste Google Auth com o Next.js</h1>
           <button className={styles.primaryButton} onClick={() => signIn()}>
             Entrar
           </button>
@@ -30,6 +29,7 @@ export default function Home() {
 
       {session && (
         <>
+          <h1>Teste Google Auth com o Next.js bem sucedido ✅ </h1>
           <h4>Você entrou no sistema: {session.user.name}</h4>
           <div className={styles.boxCenter}>
             <h4>E-mail: {session.user.email}</h4>

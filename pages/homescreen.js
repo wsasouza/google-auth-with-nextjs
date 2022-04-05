@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css';
 export default function Homescreen({ user }) {
   return (
     <div className={styles.container}>
-      <h1>Perfil</h1>
+      <h1>Teste de passagem de parâmetros bem sucedido ✅ </h1>
       <p>
         Nome completo: <b>{user.name}</b>
       </p>
